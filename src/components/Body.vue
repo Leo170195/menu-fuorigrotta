@@ -1,39 +1,31 @@
 <template>
-  <div class="hello">
-    
-    <!-- <div class="container-fluid m-nav p-0">
+  <div class="text-white p-3">
+      <h1 class="text-center mb-5">Menu Fuorigrotta <i class="fas fa-beer"></i></h1>
+    <div class="container">
         <div class="row">
             <div class="col-12">
-                <iframe width="100%" height="860" src="https://www.youtube.com/embed/uZqDSqOEA9Q?controls=0&autoplay=1&showinfo=0&loop=1&modestbranding=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h1 class="text-center">Fuorigrotta Beer & Food</h1>
+                <h2 class="mb-3">Stuzzicheria veloce</h2>
+                <div class="row">
+                    <div class="col-9">Tortillas con salsa piccante</div>
+                    <div class="col-3">€ 3.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-9">Arachidi</div>
+                    <div class="col-3">€ 2.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-9">Rice</div>
+                    <div class="col-3">€ 2.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-9">Olive</div>
+                    <div class="col-3">€ 3.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-9">Pistacchi</div>
+                    <div class="col-3">€ 3.00</div>
+                </div>
             </div>
-        </div>
-    </div> -->
-
-    <div class="conatiner mt-5 text-white">
-        <div id="beverage" class="row">
-            <div class="col-12">
-                <h3 class="my-5 text-center">Beverage <i class="fas fa-wine-glass-alt"></i></h3>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
-                <div class="beverage" id="beer" ></div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
-                <div class="beverage" id="vine" ></div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
-                <div class="beverage" id="cocktail" ></div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
-                <div class="beverage" id="rum" ></div>
-            </div>
-      </div>
-    </div>
-
-    <!-- img large -->
-    <div class="container-fluid my-5">
-        <div class="row">
-            <div class="col-12 d-none d-md-block img-large"></div>
         </div>
     </div>
 

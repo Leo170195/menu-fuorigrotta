@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <title>Fuorigrotta</title>
   <style>
     :root {
-      font-family: 'Darker Grotesque', sans-serif;
+      font-family: 'Open Sans', sans-serif;
     } 
     html{
       scroll-behavior: smooth;
@@ -19,8 +20,21 @@
       background-repeat: no-repeat;
     }
     
-    body{
-      background-color: rgba(0, 0, 0, 0.664);
+    .bg-header{
+        background-image: url('/../../img/sfondo.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 1300px;
+    }
+    @media screen and (max-width: 600px) {
+      .bg-header{
+        background-image: url('/../../img/sfondo.jpeg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 417px;
+      }
     }
     
     .navbar-toggler:focus{
@@ -63,86 +77,15 @@
       width: 170px;
       transition: 0.5s;
     }
+    
     .logo:hover{
       transform: scale(1.2);
     }
-    .mst{
-      background: linear-gradient(90deg, rgba(249,255,0,1) 0%, rgba(255,142,3,1) 39%, rgba(255,0,0,1) 100%);
-    }
-    .navbar-toggler{
-      border: solid 2px white;
-    }
-    /* .description{
-      height: 300px;
-    } */
-    .bg-menu{
-      background-color: rgba(235, 232, 232, 0.726);
-    }
-    .img-large{
-      margin: 70px 0px;
-      padding: 0p;
-      height: 350px;
-      background-image: url(/../../img/fotoLocaleDentro.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    .img-large2{
-      margin: 70px 0px;
-      padding: 0p;
-      height: 400px;
-      background-image: url(/../../img/imgL1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-y: -119px;
-    }
-    .img-large3{
-      margin: 70px 0px;
-      padding: 0p;
-      height: 400px;
-      background-image: url(/../../img/imgL2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-y: -119px;
-    }
-    .img-large4{
-      margin: 70px 0px;
-      padding: 0p;
-      height: 400px;
-      background-image: url(/../../img/imgL3.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-y: -119px;
-    }
-    .beverage{
-      height: 200px;
-      width: 200px;
-      border-radius: 100%;
-    }
-    #beer{
-      background-image: url(/../../img/birreAllaSpina.jpeg);
-      background-size: cover;
-      background-position-x: -50px;
-    }
-    #vine{
-      background-image: url(/../../img/philomena.png);
-      background-size: cover;
-    }
-    #cocktail{
-      background-image: url(/../../img/spritzVerde.jpg);
-      background-size: cover;
-      background-position-y: -50px;
-    }
-    #rum{
-      background-image: url(/../../img/botteRum.jpg);
-      background-size: cover;
-      background-position-y: -10px;
-      background-position-x: 20px;
-    }
+    
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
-<body style="background-color: rgb(20, 20, 20);">
+<body style="background-color: rgb(0, 0, 0);">
 
     <nav class="navbar navbar-expand-lg fixed-top bg-nav" aria-label="Main navigation">
     <div class="container-fluid">
@@ -226,12 +169,18 @@
       </ul>
     </div>
   </nav>
-  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 bg-header pb-0">
+
+      </div>
+    </div>
+  </div>
   <div id="app"></div>
   
-  <div class="container-fluid m-b5 text-white">
+  <!-- <div class="container-fluid m-b5 text-white">
     <div class="row">
-      <div class="col-12 col-md-3 my-5 ps-5">
+      <div class="col-12 col-md-3 my-5 ps-lg-5">
         <h5><i class="fas fa-map-marker-alt text-danger"></i>  Via Giuseppe Mazzini, 20, 76017 San Ferdinando di Puglia BT</h5> <br>
         <h5><i class="far fa-clock"></i> Tutti i giorni 18-01 (Giorno di chiusura Lunedì)</h5> <br>
         <h5><i class="fab fa-google text-success"></i> Cosa dicono di noi su <br> Google <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></h5>
@@ -241,9 +190,9 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.2860205590355!2d16.06653031479386!3d41.30264100920851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13382319634dc599%3A0xcd342aac5435cd51!2sFuorigrotta!5e0!3m2!1sit!2sit!4v1609347272071!5m2!1sit!2sit" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
-  </div>
+  </div> -->
   
-  <footer id="sticky-footer" class="py-4 bg-dark text-white-50 mb-5">
+  <footer id="sticky-footer" class="pb-4 pt-3 bg-dark text-white-50 mb-5">
     <div class="container text-center">
       
       <small>Copyright &copy; Leonardo De Candia</small>
