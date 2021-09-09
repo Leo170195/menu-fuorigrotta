@@ -4,26 +4,26 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="mb-3">Stuzzicheria veloce</h2>
+                <h2 class="mb-3 text-center">Stuzzicheria veloce</h2>
                 <div class="row">
                     <div class="col-9">Tortillas con salsa piccante</div>
-                    <div class="col-3">€ 3.00</div>
+                    <div class="col-3 text-md-end">€ 3.00</div>
                 </div>
                 <div class="row">
                     <div class="col-9">Arachidi</div>
-                    <div class="col-3">€ 2.00</div>
+                    <div class="col-3 text-md-end">€ 2.00</div>
                 </div>
                 <div class="row">
                     <div class="col-9">Rice</div>
-                    <div class="col-3">€ 2.00</div>
+                    <div class="col-3 text-md-end">€ 2.00</div>
                 </div>
                 <div class="row">
                     <div class="col-9">Olive</div>
-                    <div class="col-3">€ 3.00</div>
+                    <div class="col-3 text-md-end">€ 3.00</div>
                 </div>
                 <div class="row">
                     <div class="col-9">Pistacchi</div>
-                    <div class="col-3">€ 3.00</div>
+                    <div class="col-3 text-md-end">€ 3.00</div>
                 </div>
             </div>
         </div>
