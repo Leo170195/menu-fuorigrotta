@@ -45,13 +45,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-decoration-none text-light" href="#carne" v-on:click="closeOffCanvas">
-                            <img src="/img/icon/hamburger.png" alt="" height="30">
+                            <img src="/img/icon/beef.png" alt="" height="30">
                             Carne
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-decoration-none text-light" href="#panini" v-on:click="closeOffCanvas">
-                            <img src="/img/icon/beef.png" alt="" height="30">
+                            <img src="/img/icon/hamburger.png" alt="" height="30">
                             Panini
                         </a>
                     </li>
@@ -249,7 +249,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Carne <img src="/img/icon/hamburger.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Carne <img src="/img/icon/beef.png" alt="" height="50" class="ps-3"></h2>
                     <div class="row py-3">
                         <div class="col-9">Tagliata di manzo rucola e grana</div>
                         <div class="col-3 text-md-end">€ 15.00</div>
@@ -289,7 +289,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Panini <img src="/img/icon/beef.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Panini <img src="/img/icon/hamburger.png" alt="" height="50" class="ps-3"></h2>
                     <div class="row py-3">
                         <div class="col-9">1 - Polpo stracciatella e pomodori secchi</div>
                         <div class="col-3 text-md-end">€ 6.50</div>
