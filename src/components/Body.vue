@@ -228,7 +228,7 @@
     <div class="container pb-5">
         <div class="row">
             <div class="col-12">
-                <h2 id="insalata" class="mb-3 text-center">Insalata</h2>
+                <h2 id="panini" class="mb-3 text-center">Panini</h2>
                 <div class="row py-3">
                     <div class="col-9">1 - Polpo stracciatella e pomodori secchi</div>
                     <div class="col-3 text-md-end">€ 6.50</div>
