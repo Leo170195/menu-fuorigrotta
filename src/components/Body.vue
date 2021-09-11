@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg fixed-top bg-nav" aria-label="Main navigation">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="/../../img/insegna-tagliata.jpg" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img class="logo" src="/img/logo-b.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <div class="navbar-toggler-icon"><img src="/img/icon/hamburger.png" alt="" height="40"></div>
             </button>
