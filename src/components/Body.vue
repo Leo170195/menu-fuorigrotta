@@ -2,7 +2,7 @@
     <nav class="navbar fixed-top bg-nav" aria-label="Main navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo" src="/img/logo-b.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler pe-4 pb-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <div class="navbar-toggler-icon"><img src="/img/icon/hamburger.png" alt="" height="40"></div>
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
