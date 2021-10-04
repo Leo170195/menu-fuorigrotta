@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg fixed-top bg-nav" aria-label="Main navigation">
+    <nav class="navbar fixed-top bg-nav" aria-label="Main navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo" src="/img/logo-b.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -500,7 +500,7 @@
                         <div class="col-3 text-md-end">€ 18.00</div>
                     </div>
                     <div class="row pb-3">
-                        <div class="col-9">greco</div>
+                        <div class="col-9">Greco</div>
                         <div class="col-3 text-md-end">€ 13.00</div>
                     </div>
                     <div class="row pb-3">
@@ -571,7 +571,7 @@
 
 <script>
 // import "bootstrap/dist/css/bootstrap.min.css"
-// import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
 export default {
     name: 'Body',
