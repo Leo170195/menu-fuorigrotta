@@ -404,7 +404,7 @@
                         <div class="col-9">Stella Artois 20 cl.</div>
                         <div class="col-3 text-md-end">€ 2.50</div>
                     </div>
-                    <div class="row pb-3">
+                    <div class="row pb-4">
                         <div class="col-9">Stella Artois 40 cl.</div>
                         <div class="col-3 text-md-end">€ 4.50</div>
                     </div>
@@ -412,7 +412,7 @@
                         <div class="col-9">Leffe Rousse 25 cl.</div>
                         <div class="col-3 text-md-end">€ 3.00</div>
                     </div>
-                    <div class="row pb-3">
+                    <div class="row pb-4">
                         <div class="col-9">Leffe Rousse 50 cl.</div>
                         <div class="col-3 text-md-end">€ 5.00</div>
                     </div>
