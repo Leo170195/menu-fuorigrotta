@@ -6,75 +6,75 @@
                 <div class="navbar-toggler-icon"><img src="/img/icon/hamburger.png" alt="" height="40"></div>
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header bg-nav text-white">
-                <h5 class="offcanvas-t pb-2itle" id="offcanvasNavbarLabel">Fuorigrotta</h5>
-                <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-header bg-nav ">
+                <h5 class="offcanvas-t pb-2itle text-white" id="offcanvasNavbarLabel">Fuorigrotta</h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body bg-nav show">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" v-on:click="closeOffCanvas" href="#stuzzicheria">
+                        <a class="nav-link text-decoration-none text-white" v-on:click="closeOffCanvas" href="#stuzzicheria">
                             <!-- <i class="fas fa-utensils"></i>  -->
                             <img src="/img/icon/olives.png" alt="" height="30">
                             Stuzzicheria
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#antipasti" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#antipasti" v-on:click="closeOffCanvas">
                             <img src="/img/icon/cheese.png" alt="" height="30">
                             Antipati
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#insalata" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#insalata" v-on:click="closeOffCanvas">
                             <img src="/img/icon/salad.png" alt="" height="30">
                             Insalate
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#fritti" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#fritti" v-on:click="closeOffCanvas">
                             <img src="/img/icon/french-fries.png" alt="" height="30">
                             Fritti
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#terrine" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#terrine" v-on:click="closeOffCanvas">
                             <img src="/img/icon/bitterballen.png" alt="" height="30">
                             Terrine
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#carne" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#carne" v-on:click="closeOffCanvas">
                             <img src="/img/icon/beef.png" alt="" height="30">
                             Carne
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#panini" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#panini" v-on:click="closeOffCanvas">
                             <img src="/img/icon/hamburger.png" alt="" height="30">
                             Panini
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#coke" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#coke" v-on:click="closeOffCanvas">
                             <img src="/img/icon/coke.png" alt="" height="30">
                             Bevande
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#beers" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#beers" v-on:click="closeOffCanvas">
                             <img src="/img/icon/beers.png" alt="" height="30">
                             Birre alla spina
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#beerb" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#beerb" v-on:click="closeOffCanvas">
                             <img src="/img/icon/beerb.png" alt="" height="30">
                             Birre in bottiglia
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none text-light" href="#wine" v-on:click="closeOffCanvas">
+                        <a class="nav-link text-decoration-none text-white" href="#wine" v-on:click="closeOffCanvas">
                             <img src="/img/icon/wine.png" alt="" height="30">
                             Vini
                         </a>
@@ -84,12 +84,18 @@
             </div>
         </div>
     </nav>  
-    <div class="text-white p-3">
-        <h1 id="stuzzicheria" class="text-center mb-5">Menu Fuorigrotta <img src="/img/icon/beer.png" alt="" height="50" class="ps-3"></h1>
+    <div class="p-3">
+        <div class="form-check form-switch d-flex">
+            <div class="ms-auto pb-4 d-flex flex-column p-3">
+                <input class="form-check-input mx-auto" type="checkbox" id="flexSwitchCheckChecked" @click="white = !white" checked>
+                <label class="form-check-label pt-2" for="flexSwitchCheckChecked">{{dark}}</label>
+            </div>
+        </div>
+        <h1 id="stuzzicheria" class="text-center mb-5">Menu Fuorigrotta <img id="beerB" class="blackImg ps-3" src="/img/icon/beer.png" alt="" height="50"></h1>
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Stuzzicheria veloce <img src="/img/icon/olives.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Stuzzicheria veloce <img id="stuzzicheriaB" class="blackImg ps-3" src="/img/icon/olives.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Tortillas con salsa piccante</div>
                         <div class="col-3 text-md-end">€ 3.00</div>
@@ -117,7 +123,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Antipasti <img src="/img/icon/cheese.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Antipasti <img id="antipastiB" class="blackImg ps-3" src="/img/icon/cheese.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Caprese 2.0</div>
                         <div class="col-3 text-md-end">€ 6.00</div>
@@ -197,7 +203,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Insalate <img src="/img/icon/salad.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Insalate <img id="insalataB" class="blackImg ps-3" src="/img/icon/salad.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Insalata tricolore (insalata iceberg, cubetti di mozzarella e julienne di pomodori)</div>
                         <div class="col-3 text-md-end">€ 6.00</div>
@@ -213,7 +219,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Fritti <img src="/img/icon/french-fries.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Fritti <img id="frittiB" class="blackImg ps-3" src="/img/icon/french-fries.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Patatine fritte</div>
                         <div class="col-3 text-md-end">€ 3.50</div>
@@ -241,7 +247,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Terrine <img src="/img/icon/bitterballen.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Terrine <img id="terrineB" class="blackImg ps-3" src="/img/icon/bitterballen.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Patate al forno</div>
                         <div class="col-3 text-md-end">€ 3.50</div>
@@ -273,7 +279,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Carne <img src="/img/icon/beef.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Carne <img id="carneB" class="blackImg ps-3" src="/img/icon/beef.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Tagliata di manzo rucola e grana</div>
                         <div class="col-3 text-md-end">€ 15.00</div>
@@ -313,7 +319,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Panini <img src="/img/icon/hamburger.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Panini <img id="paniniB" class="blackImg ps-3" src="/img/icon/hamburger.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">1 - Polpo stracciatella e pomodori secchi</div>
                         <div class="col-3 text-md-end">€ 6.50</div>
@@ -372,7 +378,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Bevande<img src="/img/icon/coke.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Bevande<img id="cokeB" class="blackImg ps-3" src="/img/icon/coke.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Acqua minerale/naturale 50 cl</div>
                         <div class="col-3 text-md-end">€ 1.00</div>
@@ -399,7 +405,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Birre alla spina<img src="/img/icon/beers.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Birre alla spina<img id="beersB" class="blackImg ps-3" src="/img/icon/beers.png" alt="" height="50"></h2>
                     <div class="row pt-3 pb-1">
                         <div class="col-9">Stella Artois 20 cl.</div>
                         <div class="col-3 text-md-end">€ 2.50</div>
@@ -430,7 +436,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Birre in bottiglia<img src="/img/icon/beerb.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Birre in bottiglia<img id="beerbB" class="blackImg ps-3" src="/img/icon/beerb.png" alt="" height="50"></h2>
                     <div class="row py-3">
                         <div class="col-9">Super 8 Export</div>
                         <div class="col-3 text-md-end">€ 3.00</div>
@@ -489,7 +495,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-3 text-center">Vini<img src="/img/icon/wine.png" alt="" height="50" class="ps-3"></h2>
+                    <h2 class="mb-3 text-center">Vini<img id="wineB" class="blackImg ps-3" src="/img/icon/wine.png" alt="" height="50"></h2>
                     <h5 class="text-center pb-2">Vini Bianchi</h5>
                     <div class="row pb-3">
                         <div class="col-9">Pecorino</div>
@@ -575,11 +581,70 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
 export default {
     name: 'Body',
+    data() {
+        return{
+            white: false,
+            dark: 'Light'
+        }
+    },
     methods: {
         closeOffCanvas(){
             document.querySelector('#offcanvasNavbar').classList.remove('show')
             document.querySelector('.offcanvas-backdrop').remove()
             document.querySelector('body').style.removeProperty('overflow', 'padding-right');
+        }
+    },
+    watch: {
+        white(){
+            if(this.white){
+                this.dark = 'Dark'
+                document.querySelector('#body').classList.remove('bg-black')
+                document.querySelector('#body').classList.remove('text-light')
+                document.querySelector('#body').classList.add('text-dark')
+                document.querySelector('.blackImg').removeAttribute('src');
+                document.querySelector('#beerB').src = "/img/icon/Bbeer.png";
+                document.querySelector('#stuzzicheriaB').src = "/img/icon/olivesB.png";
+                document.querySelector('#antipastiB').src = "/img/icon/cheeseB.png";
+                document.querySelector('#insalataB').src = "/img/icon/saladB.png";
+                document.querySelector('#frittiB').src = "/img/icon/french-friesB.png";
+                document.querySelector('#terrineB').src = "/img/icon/bitterballenB.png";
+                document.querySelector('#carneB').src = "/img/icon/beefB.png";
+                document.querySelector('#paniniB').src = "/img/icon/hamburgerB.png";
+                document.querySelector('#cokeB').src = "/img/icon/cokeB.png";
+                document.querySelector('#beersB').src = "/img/icon/beersB.png";
+                document.querySelector('#beerbB').src = "/img/icon/beerbB.png";
+                document.querySelector('#wineB').src = "/img/icon/wineB.png";
+                
+                
+
+
+
+
+
+
+
+
+
+
+            }else {
+                this.dark = 'Light'
+                document.querySelector('#body').classList.add('bg-black')
+                document.querySelector('#body').classList.add('text-light')
+                document.querySelector('#body').classList.remove('text-dark')
+                document.querySelector('.blackImg').removeAttribute('src');
+                document.querySelector('#beerB').src = "/img/icon/beer.png";
+                document.querySelector('#stuzzicheriaB').src = "/img/icon/olives.png";
+                document.querySelector('#antipastiB').src = "/img/icon/cheese.png";
+                document.querySelector('#insalataB').src = "/img/icon/salad.png";
+                document.querySelector('#frittiB').src = "/img/icon/french-fries.png";
+                document.querySelector('#terrineB').src = "/img/icon/bitterballen.png";
+                document.querySelector('#carneB').src = "/img/icon/beef.png";
+                document.querySelector('#paniniB').src = "/img/icon/hamburger.png";
+                document.querySelector('#cokeB').src = "/img/icon/coke.png";
+                document.querySelector('#beersB').src = "/img/icon/beers.png";
+                document.querySelector('#beerbB').src = "/img/icon/beerb.png";
+                document.querySelector('#wineB').src = "/img/icon/wine.png";
+            }
         }
     }
 
@@ -588,5 +653,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.form-check-input:checked {
+    background-color: #000000;
+    border-color: #ffffff;
+}
 </style>
