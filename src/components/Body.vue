@@ -8,7 +8,7 @@
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header bg-nav ">
                 <h5 class="offcanvas-t pb-2itle text-white" id="offcanvasNavbarLabel">Fuorigrotta</h5>
-                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body bg-nav show">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -576,7 +576,7 @@
 </template>
 
 <script>
-// import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
 export default {
